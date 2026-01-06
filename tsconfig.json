@@ -3,6 +3,11 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@some-angular-utils/paginator": [
+        "./dist/some-angular-utils/paginator"
+      ]
+    },
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
@@ -28,6 +33,12 @@
     },
     {
       "path": "./tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/some-angular-utils/paginator/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/some-angular-utils/paginator/tsconfig.spec.json"
     }
   ]
 }
