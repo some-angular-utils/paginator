@@ -1,4 +1,6 @@
 <div class="sau-table-pagination">
+
+    aaa
     <div class="sau-table-pagination-nav-left">
         <button type="button" (click)="goToFirstPage()" class="sau-table-pagination-nav-button-wide"
             [class.sau-table-pagination-nav-button-disabled]="currentPage === 1"
@@ -14,11 +16,12 @@
     </div>
 
     <div class="sau-table-pagination-number-buttons">
+        total {{totalPages}} currentPage {{currentPage}}
         @for (item of visiblePages; track item) {
-        <button (click)="changePage(item)" class="sau-table-pagination-number-button"
+        <button (click)="changePage(item)" type="button" class="sau-table-pagination-number-button"
             [class.sau-table-pagination-number-button-active]="item === currentPage"
-            [class.sau-table-pagination-number-button-inactive]="item !== currentPage" type="button">
-            {{item}}
+            [class.sau-table-pagination-number-button-inactive]="item !== currentPage">
+            {{ item }}
         </button>
         }
     </div>

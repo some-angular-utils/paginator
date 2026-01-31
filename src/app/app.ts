@@ -8,8 +8,13 @@ import { SAUPaginatorModule } from '@some-angular-utils/paginator';
   styleUrl: './app.scss'
 })
 export class App {
-  totalPages: number = 101;
-  currentPage: number = 1;
+  totalPages: number = 0;
+  currentPage: number = 0;
+
+  ngOnInit(){
+    this.totalPages = 101
+    this.currentPage= 1
+  }
 
   onPageChange(nuevaPagina: number) {
     this.currentPage = nuevaPagina;
