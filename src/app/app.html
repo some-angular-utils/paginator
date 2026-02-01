@@ -1,5 +1,7 @@
-<sau-paginator 
-  [totalPages]="totalPages" 
-  [currentPage]="currentPage"
-  (pageChange)="onPageChange($event)">
+<sau-paginator [totalPages]="totalPages" [currentPage]="currentPage" (pageChange)="onPageChange($event)">
 </sau-paginator>
+
+<div id="otherColors">
+  <sau-paginator [totalPages]="totalPages" [currentPage]="currentPage" (pageChange)="onPageChange($event)">
+  </sau-paginator>
+</div>
