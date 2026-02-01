@@ -1,39 +1,39 @@
-<div class="sau-table-pagination">
+<div class="sau-paginator">
 
-    <div class="sau-table-pagination-nav-left">
-        <button type="button" (click)="goToFirstPage()" class="sau-table-pagination-nav-button-wide"
-            [class.sau-table-pagination-nav-button-disabled]="currentPage === 1"
-            [class.sau-table-pagination-nav-button-enabled]="currentPage !== 1">
+    <div class="sau-paginator-nav-left">
+        <button type="button" (click)="goToFirstPage()" class="sau-paginator-nav-button-wide"
+            [class.sau-paginator-nav-button-disabled]="currentPage === 1"
+            [class.sau-paginator-nav-button-enabled]="currentPage !== 1">
             <sau-chevron-double-left-icon></sau-chevron-double-left-icon>
         </button>
 
-        <button type="button" (click)="changePage(currentPage - 1)" class="sau-table-pagination-nav-button"
-            [class.sau-table-pagination-nav-button-disabled]="currentPage === 1"
-            [class.sau-table-pagination-nav-button-enabled]="currentPage !== 1">
+        <button type="button" (click)="changePage(currentPage - 1)" class="sau-paginator-nav-button"
+            [class.sau-paginator-nav-button-disabled]="currentPage === 1"
+            [class.sau-paginator-nav-button-enabled]="currentPage !== 1">
             <sau-chevron-left-icon></sau-chevron-left-icon>
         </button>
     </div>
 
-    <div class="sau-table-pagination-number-buttons">
+    <div class="sau-paginator-number-buttons">
         @for (item of visiblePages; track item) {
-        <button (click)="changePage(item)" type="button" class="sau-table-pagination-number-button"
-            [class.sau-table-pagination-number-button-active]="item === currentPage"
-            [class.sau-table-pagination-number-button-inactive]="item !== currentPage">
+        <button (click)="changePage(item)" type="button" class="sau-paginator-number-button"
+            [class.sau-paginator-number-button-active]="item === currentPage"
+            [class.sau-paginator-number-button-inactive]="item !== currentPage">
             {{ item }}
         </button>
         }
     </div>
 
-    <div class="sau-table-pagination-nav-right">
-        <button type="button" (click)="changePage(currentPage + 1)" class="sau-table-pagination-nav-button"
-            [class.sau-table-pagination-nav-button-disabled]="currentPage === totalPages"
-            [class.sau-table-pagination-nav-button-enabled]="currentPage !== totalPages">
+    <div class="sau-paginator-nav-right">
+        <button type="button" (click)="changePage(currentPage + 1)" class="sau-paginator-nav-button"
+            [class.sau-paginator-nav-button-disabled]="currentPage === totalPages"
+            [class.sau-paginator-nav-button-enabled]="currentPage !== totalPages">
             <sau-chevron-right-icon></sau-chevron-right-icon>
         </button>
 
-        <button type="button" (click)="goToLastPage()" class="sau-table-pagination-nav-button-wide"
-            [class.sau-table-pagination-nav-button-disabled]="currentPage === totalPages"
-            [class.sau-table-pagination-nav-button-enabled]="currentPage !== totalPages">
+        <button type="button" (click)="goToLastPage()" class="sau-paginator-nav-button-wide"
+            [class.sau-paginator-nav-button-disabled]="currentPage === totalPages"
+            [class.sau-paginator-nav-button-enabled]="currentPage !== totalPages">
             <sau-chevron-double-right-icon></sau-chevron-double-right-icon>
         </button>
     </div>

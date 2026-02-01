@@ -1,59 +1,44 @@
-# Paginator
+# @some-angular-utils/paginator
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.4.
+[![github stars](https://img.shields.io/github/stars/some-angular-utils/paginator.svg?style=social&label=Star)](https://github.com/some-angular-utils/paginator)
 
-## Development server
+[![NPM Version](https://img.shields.io/npm/v/@some-angular-utils/paginator)](https://www.npmjs.com/package/@some-angular-utils/paginator)
+[![NPM Downloads](https://img.shields.io/npm/dm/@some-angular-utils/paginator)](https://www.npmjs.com/package/@some-angular-utils/paginator)
 
-To start a local development server, run:
+[![npm bundle size](https://img.shields.io/bundlephobia/min/@some-angular-utils/paginator)](https://www.npmjs.com/package/@some-angular-utils/paginator)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@some-angular-utils/paginator)](https://www.npmjs.com/package/@some-angular-utils/paginator)
 
-```bash
-ng serve
+---
+
+[DEMO](https://some-angular-utils.github.io/paginator)
+
+[NPM](https://www.npmjs.com/package/@some-angular-utils/paginator)
+
+---
+
+## IMPORT
+```ts
+import { SAUPaginatorModule } from '@some-angular-utils/paginator';
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+## HTML
+```ts
+<sau-paginator
+    [totalPages]="totalPages"
+    [currentPage]="currentPage"
+    (pageChange)="onPageChange($event)"
+></sau-paginator>
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## COLORS
 
-```bash
-ng generate --help
+```css
+.sau-paginator{
+    --sau-color-primary: rgb(147, 51, 234);
+    --sau-color-secondary: var(--sau-color-primary);
+    --sau-color-background: rgb(255, 255, 255);
+    --sau-color-edit: rgb(34, 197, 94);
+    --sau-color-delete: rgb(239, 68, 68);
+    --sau-color-text: rgb(31, 41, 55);
+}
 ```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
