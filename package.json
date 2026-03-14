@@ -9,7 +9,6 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build:lib": "ng-packagr -p projects/some-angular-utils/paginator/ng-package.json",
-    "build:gh-pages": "npm run build:lib && npm run build",
     "start:storybook": "ng run @some-angular-utils/paginator:storybook",
     "build:storybook": "ng run @some-angular-utils/paginator:build-storybook"
   },
