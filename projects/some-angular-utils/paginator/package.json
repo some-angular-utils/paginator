@@ -1,6 +1,25 @@
 {
   "name": "@some-angular-utils/paginator",
   "version": "0.0.11",
+  "description": "Angular paginator utility library",
+  "author": {
+    "name": "jose de los santos",
+    "email": "delossantosramosjose@gmail.com",
+    "url": "https://jose-web.github.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/some-angular-utils/paginator.git"
+  },
+  "license": "MIT",
+  "homepage": "https://some-angular-utils.github.io/paginator",
+  "keywords": [
+    "angular",
+    "paginator",
+    "pagination",
+    "angular-paginator",
+    "utils"
+  ],
   "peerDependencies": {
     "@angular/common": "^21.0.0",
     "@angular/core": "^21.0.0"
