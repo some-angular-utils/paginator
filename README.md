@@ -10,11 +10,20 @@
 
 ---
 
-[DEMO](https://some-angular-utils.github.io/paginator)
-
 [NPM](https://www.npmjs.com/package/@some-angular-utils/paginator)
 
 ---
+
+## DEMO
+
+This repo ships with an interactive showcase app — every behavior has a live, editable example (edit the code, the paginator updates in real time). Run it locally:
+
+```bash
+npm install
+npm run dev
+```
+
+Then open http://localhost:4200.
 
 ## IMPORT
 ```ts
@@ -37,8 +46,5 @@ import { SAUPaginatorModule } from '@some-angular-utils/paginator';
     --sau-color-primary: rgb(147, 51, 234);
     --sau-color-secondary: var(--sau-color-primary);
     --sau-color-background: rgb(255, 255, 255);
-    --sau-color-edit: rgb(34, 197, 94);
-    --sau-color-delete: rgb(239, 68, 68);
-    --sau-color-text: rgb(31, 41, 55);
 }
 ```

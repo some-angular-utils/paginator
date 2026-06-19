@@ -8,9 +8,7 @@
     "build": "ng build --base-href=/paginator/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:lib": "ng-packagr -p projects/some-angular-utils/paginator/ng-package.json",
-    "start:storybook": "ng run @some-angular-utils/paginator:storybook",
-    "build:storybook": "ng run @some-angular-utils/paginator:build-storybook"
+    "build:lib": "ng-packagr -p projects/some-angular-utils/paginator/ng-package.json"
   },
   "prettier": {
     "printWidth": 100,
@@ -33,7 +31,6 @@
     "@angular/forms": "^21.0.0",
     "@angular/platform-browser": "^21.0.0",
     "@angular/router": "^21.0.0",
-    "@storybook/preview-api": "^8.6.14",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
   },
@@ -45,10 +42,11 @@
     "@angular/cli": "^21.0.4",
     "@angular/compiler-cli": "^21.0.0",
     "@angular/platform-browser-dynamic": "^21.0.0",
-    "@storybook/angular": "^10.2.3",
+    "@tailwindcss/postcss": "^4.1.14",
     "jsdom": "^27.1.0",
     "ng-packagr": "^21.0.0",
-    "storybook": "^10.2.3",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.14",
     "typescript": "~5.9.2",
     "vitest": "^4.0.8"
   }
